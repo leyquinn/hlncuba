@@ -33,18 +33,6 @@ body {
     color: white;
 }
 
-.nav-link {
-    display: inline-block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
-}
-
-.nav-link:hover {
-    background-color: gray;
-    color: white;
-}
-
 .homepage {
     padding: 20px;
     text-align: center;
