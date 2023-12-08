@@ -5,7 +5,6 @@ body {
     font-weight: bolder;
 }
 
-
 .navbar {
     background-color: pink;
     overflow: hidden;
@@ -18,11 +17,9 @@ body {
     text-align: center;
 }
 
-
 .navbar li {
     display: inline;
 }
-
 
 .navbar a {
     display: inline-block;
@@ -31,12 +28,10 @@ body {
     color: black;
 }
 
-
 .navbar a:hover {
     background-color: gray;
     color: white;
 }
-
 
 .nav-link {
     display: inline-block;
@@ -45,32 +40,25 @@ body {
     color: black;
 }
 
-
 .nav-link:hover {
     background-color: gray;
     color: white;
 }
 
-
 .homepage {
     padding: 20px;
     text-align: center;
-  }
-
-
-
+}
 
 .homepage h1 {
     font-size: 5em;
     color: pink;
 }
 
-
 .homepage h1:hover {
     color: white;
     cursor: pointer;
 }
-
 
   .welcome-button {
     background-color: pink;
@@ -87,18 +75,14 @@ body {
     padding-right: 16px;
 
 
-
-
     transition: background-color 0.15s,
       color 0.15s;
   }
-
 
   .welcome-button:hover {
     background-color: gray;  
     color: white;  
   }
-
 
   .welcome-button:active {
     opacity: 0.7;
