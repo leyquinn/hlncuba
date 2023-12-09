@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Roboto Mono;
+    font-family: 'Roboto Mono', monospace;
     background-color: black;
     font-weight: bolder;
 }
@@ -10,9 +10,10 @@ body {
     overflow: hidden;
     font-size: 20px;
 }
+
 .navbar ul {
     list-style-type: none;
-    margin: 20px;
+    margin: 0;
     padding: 15px;
     text-align: center;
 }
@@ -39,7 +40,7 @@ body {
 }
 
 .homepage h1 {
-    font-size: 5em;
+    font-size: 3em; /* Adjusted font size */
     color: pink;
 }
 
@@ -48,30 +49,24 @@ body {
     cursor: pointer;
 }
 
-  .welcome-button {
+.welcome-button {
     background-color: pink;
-    font-family: Roboto Mono;
-    border-style: solid;
-    border-width: 1px;
+    font-family: 'Roboto Mono', monospace;
+    border: 1px solid;
     font-weight: bolder;
     color: black;
     border-radius: 30px;
     cursor: pointer;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 9px 16px;
 
+    transition: background-color 0.15s, color 0.15s;
+}
 
-    transition: background-color 0.15s,
-      color 0.15s;
-  }
+.welcome-button:hover {
+    background-color: gray;
+    color: white;
+}
 
-  .welcome-button:hover {
-    background-color: gray;  
-    color: white;  
-  }
-
-  .welcome-button:active {
+.welcome-button:active {
     opacity: 0.7;
-  }
+}
