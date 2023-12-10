@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CONVERSION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversion.css">
+    <title>CONVERSION</title>
 </head>
-
 <body>
 
-<div id="navbar-placeholder"></div>
-<script>
-    fetch('./navbar.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('navbar-placeholder').innerHTML = html;
-        });
-</script>
-
+<div class="conversion-color">
     <h1>CONVERSION</h1>
+</div>
 
-    <a href="index.html">BACK TO HOMEPAGE</a>
+<div class="converter">
+    <h2>CELSIUS TO FAHRENHEIT CONVERSION</h2>
+    <label>ENTER CELSIUS:</label>
+    <input type="number" id="celsiusInput">
+    <button onclick="convertCelsiusToFahrenheit()">Convert</button>
+    <p id="resultCelsiusToFahrenheit"></p><br>
+</div>
 
+<div class="converter">
+    <h2>FAHRENHEIT TO CELCIUS CONVERSION</h2>
+    <label>ENTER FAHRENHEIT:</label>
+    <input type="number" id="fahrenheitInput">
+    <button onclick="convertFahrenheitToCelsius()">Convert</button>
+    <p id="resultFahrenheitToCelsius"></p><br>
+</div>
+
+<div class="converter">
+    <h2>METERS TO FEET CONVERSION</h2>
+    <label>ENTER METERS:</label>
+    <input type="number" id="metersInput">
+    <button onclick="convertMetersToFeet()">Convert</button>
+    <p id="resultMetersToFeet"></p><br>
+</div>
+
+<div class="converter">
+    <h2>FEET TO METERS CONVERSION</h2>
+    <label>ENTER FEET:</label>
+    <input type="number" id="feetInput">
+    <button onclick="convertFeetToMeters()">Convert</button>
+    <p id="resultFeetToMeters"></p><br>
+</div>
+
+<a href="index.html">
+    <button class="back-to-homepage">
+        <p>BACK TO HOME PAGE</p>
+    </button>
+</a>
+
+<script src="conversion.js"></script>
 </body>
 </html>
+
+
 
