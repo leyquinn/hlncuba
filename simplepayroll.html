@@ -10,11 +10,102 @@
     <h1>SIMPLE PAYROLL</h1>
     <a href="index.html">
         <button class="sp-homepage">
-        <p>BACK TO HOME PAGE</p>
+            <p>BACK TO HOME PAGE</p>
         </button>
     </a>
 </div>
 
+<table border="1" style="margin: 100px auto;">
+    <tr>
+        <th>Employee Name</th>
+        <th>Hours Worked</th>
+        <th>Hourly Rate</th>
+        <th>Total Earnings (₱)</th>
+        <th>Taxes (₱)</th>
+        <th>Net Income (₱)</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Michelle Dee</td>
+        <td>40</td>
+        <td>₱15</td>
+        <td>₱600</td>
+        <td>₱100</td>
+        <td>₱500</td>
+        <td><button onclick="document.getElementById('modal1').showModal()">View Details</button></td>
+    </tr>
+    <tr>
+        <td>Kianna Dy</td>
+        <td>35</td>
+        <td>₱20</td>
+        <td>₱700</td>
+        <td>₱120</td>
+        <td>₱580</td>
+        <td><button onclick="document.getElementById('modal2').showModal()">View Details</button></td>
+    </tr>
+    <tr>
+        <td>Dwight Ramos</td>
+        <td>45</td>
+        <td>₱25</td>
+        <td>₱1125</td>
+        <td>₱150</td>
+        <td>₱975</td>
+        <td><button onclick="document.getElementById('modal3').showModal()">View Details</button></td>
+    </tr>
+    <tr>
+        <td>Jisoo Kim</td>
+        <td>30</td>
+        <td>₱18</td>
+        <td>₱540</td>
+        <td>₱80</td>
+        <td>₱460</td>
+        <td><button onclick="document.getElementById('modal4').showModal()">View Details</button></td>
+    </tr>
+    <tr>
+        <td>Rosie Park</td>
+        <td>38</td>
+        <td>₱22</td>
+        <td>₱836</td>
+        <td>₱120</td>
+        <td>₱716</td>
+        <td><button onclick="document.getElementById('modal5').showModal()">View Details</button></td>
+    </tr>
+</table>
+
+<dialog id="modal1">
+    <span class="close-button" onclick="document.getElementById('modal1').close()">&times;</span>
+    <h3>Employee Details - Michelle Dee</h3>
+    <p>Employee ID: 1</p>
+    <p>Total Earnings: ₱600</p>
+</dialog>
+
+<dialog id="modal2">
+    <span class="close-button" onclick="document.getElementById('modal2').close()">&times;</span>
+    <h3>Employee Details - Kianna Dy</h3>
+    <p>Employee ID: 2</p>
+    <p>Total Earnings: ₱700</p>
+</dialog>
+
+<dialog id="modal3">
+    <span class="close-button" onclick="document.getElementById('modal3').close()">&times;</span>
+    <h3>Employee Details - Dwight Ramos</h3>
+    <p>Employee ID: 3</p>
+    <p>Total Earnings: ₱1125</p>
+</dialog>
+
+<dialog id="modal4">
+    <span class="close-button" onclick="document.getElementById('modal4').close()">&times;</span>
+    <h3>Employee Details - Jisoo Kim</h3>
+    <p>Employee ID: 4</p>
+    <p>Total Earnings: ₱540</p>
+</dialog>
+
+<dialog id="modal5">
+    <span class="close-button" onclick="document.getElementById('modal5').close()">&times;</span>
+    <h3>Employee Details - Rosie Park</h3>
+    <p>Employee ID: 5</p>
+    <p>Total Earnings: ₱836</p>
+</dialog>
+
 </body>
 </html>
-
