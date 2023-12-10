@@ -8,13 +8,13 @@ body {
 .navbar {
     background-color: pink;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 15px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .homepage h1 {
-    font-size: 3em; /* Adjusted font size */
+    font-size: 6em;
     color: pink;
 }
 
@@ -59,7 +59,7 @@ body {
     cursor: pointer;
     padding: 9px 16px;
 
-    transition: background-color 0.15s, color 0.15s;
+    transition: color 0.15s;
 }
 
 .welcome-button:hover {
