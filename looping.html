@@ -6,14 +6,25 @@
 </head>
 <body>
 
-<div class="looping">
+<div class="looping-color">
     <h1>LOOPING</h1>
+
+    <div class="calculator-container">
+        <label for="nValue">ENTER A NUMBER (N):</label>
+        <input type="number" id="nValue" placeholder="Enter">
+        
+        <button class="calculate-button" onclick="calculate()">Calculate</button>
+        
+        <div id="result"></div>
+    </div>
+
     <a href="index.html">
         <button class="looping-homepage">
-        <p>BACK TO HOME PAGE</p>
+            <p>BACK TO HOME PAGE</p>
         </button>
     </a>
 </div>
 
+<script src="looping.js"></script>
 </body>
 </html>
