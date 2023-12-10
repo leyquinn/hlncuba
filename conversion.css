@@ -1,4 +1,73 @@
-.navbar a.active {
+body {
+    margin: 0;
+    font-family: 'Roboto Mono' monospace;
+    background-color: pink; 
+    font-weight: bolder;
+
+}
+
+h1 {
+    font-size: 15;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    background-color: pink;
+
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.conversion-color {
+    padding: 20px;
+    text-align: center;
+}
+
+.conversion-color h1 {
+    font-size: 4.5em;
+    color: black;
+}
+
+.conversion-color h1:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.converter {
+    color: black;
+    text-align: center;
+}
+
+.back-to-homepage {
+    display: block;
+    margin: auto;
+    background-color: pink;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.99em;
+    border: 3px solid;
+    font-weight: bolder;
+    color: black;
+    border-radius: 80px;
+    cursor: pointer;
+    padding: 5px 5px;
+   
+    transition: color 0.15s;
+}
+
+.back-to-homepage:hover {
     background-color: gray;
     color: white;
+}
+
+.back-to-homepage:active {
+    opacity: 0.7;
 }
