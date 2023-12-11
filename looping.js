@@ -5,20 +5,31 @@ function calculate() {
         let factorial = 1;
         let sum = 0;
 
-        for (let i = 1; i <= nValue; i++) {
+        let i = 1;
+        while (i <= nValue) {
             factorial *= i;
-            sum += i;
+            i++;
         }
+        
+        let j = 1;
+        let doWhileSum = 0;
+        do {
+            doWhileSum += j;
+            j++;
+        } while (j <= nValue);
 
-        const average = sum / nValue;
-
+        let forSum = 0;
+        for (let k = 1; k <= nValue; k++) {
+            forSum += k;
+        }
+        const forAverage = forSum / nValue;
+        
         document.getElementById('result').innerHTML = `
             Factorial of ${nValue}: ${factorial}<br>
-            Sum of first ${nValue} natural numbers: ${sum}<br>
-            Average of first ${nValue} natural numbers: ${average.toFixed(2)}
+            Sum of first ${nValue} natural numbers (Do While Loop): ${doWhileSum}<br>
+            Average of first ${nValue} natural numbers (For Loop): ${forAverage.toFixed(2)}
         `;
     } else {
         document.getElementById('result').innerText = 'Please enter a valid and positive integer for N.';
     }
 }
-
