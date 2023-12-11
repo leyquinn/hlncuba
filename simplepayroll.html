@@ -21,7 +21,7 @@
         <th>Hours Worked</th>
         <th>Hourly Rate</th>
         <th>Total Earnings (₱)</th>
-        <th>Taxes (₱)</th>
+        <th>Deductions (₱)</th>
         <th>Net Income (₱)</th>
         <th>Action</th>
     </tr>
@@ -70,8 +70,12 @@
         <td>₱716</td>
         <td><button onclick="document.getElementById('modal5').showModal()">View Details</button></td>
     </tr>
+
+  
+
+    <!-- Additional row for input -->
     <tr>
-         <td><input type="text" id="inputName" placeholder="Employee Name"></td>
+        <td><input type="text" id="inputName" placeholder="Employee Name"></td>
         <td><input type="number" id="inputHours" placeholder="Hours Worked"></td>
         <td><input type="number" id="inputRate" placeholder="Hourly Rate"></td>
         <td></td>
@@ -80,7 +84,6 @@
         <td><button onclick="addEmployee()">Add Employee</button></td>
     </tr>
 </table>
-    
 
 <dialog id="modal1">
     <span class="close-button" onclick="document.getElementById('modal1').close()">&times;</span>
@@ -96,26 +99,27 @@
     <p>Total Earnings: ₱700</p>
 </dialog>
 
-<dialog id="modal3">
+    <dialog id="modal3">
     <span class="close-button" onclick="document.getElementById('modal3').close()">&times;</span>
     <h3>Employee Details - Dwight Ramos</h3>
     <p>Employee ID: 3</p>
     <p>Total Earnings: ₱1125</p>
 </dialog>
 
-<dialog id="modal4">
+    <dialog id="modal4">
     <span class="close-button" onclick="document.getElementById('modal4').close()">&times;</span>
     <h3>Employee Details - Jisoo Kim</h3>
     <p>Employee ID: 4</p>
     <p>Total Earnings: ₱540</p>
 </dialog>
 
-<dialog id="modal5">
+    <dialog id="modal5">
     <span class="close-button" onclick="document.getElementById('modal5').close()">&times;</span>
     <h3>Employee Details - Rosie Park</h3>
     <p>Employee ID: 5</p>
     <p>Total Earnings: ₱836</p>
 </dialog>
 
+<script src="simplepayroll.js"></script>
 </body>
 </html>
