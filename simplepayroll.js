@@ -50,4 +50,24 @@ function addEmployee() {
         const newEmployee = {
             name: inputName,
             hours: inputHours,
-            rate: input
+            rate: inputRate,
+            deductions: 0 // You can add deduction logic if needed
+        };
+
+        employeeList.push(newEmployee);
+        updateTable();
+    } else {
+        alert('Please enter valid input for Employee Name, Hours Worked, and Hourly Rate.');
+    }
+}
+
+function deleteEmployee(index) {
+    const confirmDelete = confirm('Are you sure you want to delete this employee?');
+
+    if (confirmDelete) {
+        employeeList.splice(index, 1);
+        updateTable();
+    }
+}
+
+updateTable();
